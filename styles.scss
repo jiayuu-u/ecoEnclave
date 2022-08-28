@@ -1,0 +1,326 @@
+@import url("http://fonts.cdnfonts.com/css/open-sans");
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+
+$colors: (
+  // deep-green: #2b463c,
+  deep-green: #5f7161,
+  middle-green: #688f4e,
+  light-green: #ccd6a6,
+  light-green2: #6d8b74,
+  grass-green: #b1d182,
+  light: #f4f1e9,
+  yellow: #ecda65,
+  lightgray: #e0dec8,
+  darkgray: #a9a9a9,
+  dimgray: #696969,
+  deepgray: #2b2b2b,
+  green-background: #a4b7a5,
+  backgroundColor: #f7efdd,
+  black: #000000,
+  white: #ffffff
+);
+
+$navHeight: 80px;
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+
+  .nav_container {
+    display: flex;
+    justify-content: space-between;
+    height: $navHeight;
+    width: 90%;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0 50px;
+
+    #navbar_logo {
+      color: map-get($map: $colors, $key: white);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 2rem;
+      span {
+        font-weight: 800;
+      }
+    }
+
+    .navbar_menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      .navbar_item {
+        height: $navHeight;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        .navbar_links {
+          color: map-get($map: $colors, $key: white);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          margin: 0 20px;
+          transform: all 0.3s ease;
+          text-decoration: none;
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #000;
+            transition: width 0.3s;
+          }
+
+          &:hover {
+            color: map-get($map: $colors, $key: light-green);
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slidesContainer {
+  .carousel-inner {
+    img {
+      width: 100vw;
+      height: 100vh;
+      opacity: 90%;
+      filter: brightness(60%);
+    }
+
+    .carousel-caption {
+      top: 35%;
+      h1 {
+        font-size: 6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .carousel-prevBtn {
+    transform: rotate(270deg);
+  }
+
+  .carousel-nextBtn {
+    transform: rotate(90deg);
+  }
+}
+
+.part1Container {
+  padding: 5rem 15% 0 15%;
+
+  .part1_leftPart {
+    font-size: 1.2rem;
+    padding: 0 100px 0 0;
+    color: map-get($map: $colors, $key: deepgray);
+  }
+  .part1_rightPart {
+    .part1_rightPart_info {
+      color: map-get($map: $colors, $key: dimgray);
+      span {
+        font-weight: 700;
+      }
+    }
+    .part1_rightPart_images {
+      margin-top: 40px;
+      img {
+        width: 6rem;
+        height: auto;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.part2Container {
+  padding: 0 15% 0 15%;
+  margin-top: 6rem;
+  //   z-index: -1;
+  h1 {
+    color: map-get($map: $colors, $key: dimgray);
+    font-size: 4.5rem;
+    line-height: 1;
+    z-index: 99;
+    font-weight: 600;
+
+    .green {
+      color: map-get($map: $colors, $key: middle-green);
+    }
+    .yellow {
+      color: map-get($map: $colors, $key: yellow);
+    }
+  }
+
+  .part2-under {
+    top: -6rem;
+    // right: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: map-get($map: $colors, $key: lightgray);
+    opacity: 30%;
+    z-index: -1;
+  }
+}
+
+.part3Container {
+  .part3_image {
+    padding: 0;
+    img {
+      width: 33.3vw;
+      height: 40vh;
+      z-index: 1;
+      //   transform: scale(1.5);
+      position: relative;
+      display: inline-block;
+      filter: brightness(85%);
+    }
+
+    .part3_overlay {
+      background-color: map-get($map: $colors, $key: light-green2);
+      opacity: 20%;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        transition: 0.5s ease;
+        background-color: map-get($map: $colors, $key: black);
+        overflow: hidden;
+      }
+    }
+
+    .part3_overlayText {
+      p {
+        z-index: 3;
+        font-size: 5rem;
+        text-align: center;
+        color: map-get($map: $colors, $key: white);
+      }
+    }
+  }
+}
+
+.part4Container {
+  max-width: 100%;
+  height: 90vh;
+  background-color: map-get($map: $colors, $key: green-background);
+
+  .part4Left {
+    color: map-get($map: $colors, $key: deepgray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+    .part4Left_title {
+      h2 {
+        font-size: 4rem;
+        font-weight: 600;
+      }
+    }
+    .part4Left_content {
+      padding-top: 2rem;
+      p {
+      }
+    }
+    .part4Left_button {
+      margin-top: 2rem;
+      button {
+        padding: 0.7rem 1.5rem;
+        border: 2.5px solid map-get($map: $colors, $key: deep-green);
+        border-radius: 4px;
+
+        a {
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+
+        &:hover {
+          background-color: map-get($map: $colors, $key: deep-green);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .part4Right {
+    // padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+
+  .social {
+    .social_icon-link {
+      color: map-get($map: $colors, $key: deep-green);
+      font-size: 2rem;
+      margin: 0 0.5rem;
+      padding-bottom: 25px;
+    }
+  }
+  .list-inline {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    padding: 2rem;
+    a {
+      color: map-get($map: $colors, $key: deep-green);
+    }
+  }
+  .copyright {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+  }
+}
