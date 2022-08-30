@@ -15,9 +15,10 @@
   font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 100;
   position: absolute;
   width: 100%;
+  align-self: stretch;
 }
 .navbar .nav_container {
   display: flex;
@@ -185,8 +186,8 @@
 
 .part4Container {
   max-width: 100%;
-  height: 90vh;
-  background-color: #a4b7a5;
+  height: 50rem;
+  background-color: #c2cbc2;
 }
 .part4Container .part4Left {
   color: #2b2b2b;
@@ -211,7 +212,7 @@
   border-radius: 4px;
 }
 .part4Container .part4Left .part4Left_button button a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
@@ -224,10 +225,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.part4Container .part4Right img {
-  max-width: 100%;
-  max-height: 100%;
+  background-image: url("/images/riccardo-annandale-7e2pe9wjL9M-unsplash.jpg");
+  object-fit: scale-down;
 }
 
 .footerContainer {
@@ -259,6 +258,78 @@
   font-size: 13px;
   color: #aaa;
   margin-bottom: 0;
+}
+
+.headerContainer {
+  position: relative;
+}
+.headerContainer .headerContainerImage img {
+  width: 100vw;
+  height: 40vh;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+.headerContainer .headerContainerText {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  color: #ffffff;
+}
+.headerContainer .headerContainerText h1 {
+  font-weight: 600;
+}
+.headerContainer .headerContainerText p {
+  padding-top: 1rem;
+}
+
+.energyGenerationSection {
+  margin: 8rem 10%;
+  display: flex;
+}
+.energyGenerationSection .energyGenerationSection_left .energyGenerationSection_title h4 {
+  margin-top: 3rem;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+.energyGenerationSection .energyGenerationSection_left .energyGenerationSection_content {
+  margin-top: 2rem;
+}
+.energyGenerationSection .energyGenerationSection_left .energyGenerationSection_content p {
+  line-height: 2;
+}
+.energyGenerationSection .energyGenerationSection_right {
+  margin: 20px;
+  background-image: url("/images/image2.jpg");
+  background-size: cover;
+  border-radius: 4px;
+  filter: drop-shadow(0 0 0.75rem #a9a9a9);
+}
+
+.pollutionSection {
+  background-color: #ccd6a6;
+}
+.pollutionSection .pollutionContainer {
+  margin: 6rem 10%;
+  padding: 6rem 0;
+}
+.pollutionSection .pollutionContainer .pollutionMore button {
+  padding: 0.7rem 1.5rem;
+  border: 2.5px solid #5f7161;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.pollutionSection .pollutionContainer .pollutionMore button a {
+  color: #5f7161;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.pollutionSection .pollutionContainer .pollutionMore button a:hover {
+  color: #ffffff;
+}
+.pollutionSection .pollutionContainer .pollutionMore button:hover {
+  background-color: #5f7161;
+  transition: all 0.3s ease;
 }
 
 /*# sourceMappingURL=styles.css.map */

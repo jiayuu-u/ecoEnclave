@@ -14,7 +14,7 @@ $colors: (
   darkgray: #a9a9a9,
   dimgray: #696969,
   deepgray: #2b2b2b,
-  green-background: #a4b7a5,
+  green-background: #c2cbc2,
   backgroundColor: #f7efdd,
   black: #000000,
   white: #ffffff
@@ -38,9 +38,10 @@ $navHeight: 80px;
   font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 100;
   position: absolute;
   width: 100%;
+  align-self: stretch;
 
   .nav_container {
     display: flex;
@@ -236,7 +237,7 @@ $navHeight: 80px;
 
 .part4Container {
   max-width: 100%;
-  height: 90vh;
+  height: 50rem;
   background-color: map-get($map: $colors, $key: green-background);
 
   .part4Left {
@@ -264,7 +265,7 @@ $navHeight: 80px;
         border-radius: 4px;
 
         a {
-          color: white;
+          color: map-get($map: $colors, $key: white);
           text-decoration: none;
           text-transform: uppercase;
           font-weight: 500;
@@ -283,11 +284,13 @@ $navHeight: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("/images/riccardo-annandale-7e2pe9wjL9M-unsplash.jpg");
+    object-fit: scale-down;
 
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
+    // img {
+    //   max-width: 100%;
+    //   max-height: 100%;
+    // }
   }
 }
 
@@ -322,5 +325,105 @@ $navHeight: 80px;
     font-size: 13px;
     color: #aaa;
     margin-bottom: 0;
+  }
+}
+// Save energy page
+
+.headerContainer {
+  position: relative;
+  .headerContainerImage {
+    // background-image: url("/images/slideImage2.jpg");
+    // height: 45vh;
+    // width: 100vw;
+    // object-fit: cover;
+    // filter: brightness(70%);
+    img {
+      width: 100vw;
+      height: 40vh;
+      object-fit: cover;
+      filter: brightness(70%);
+    }
+  }
+
+  .headerContainerText {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: map-get($map: $colors, $key: white);
+    h1 {
+      font-weight: 600;
+    }
+    p {
+      padding-top: 1rem;
+    }
+  }
+}
+
+.saveEnergyContainer {
+}
+
+.energyGenerationSection {
+  margin: 8rem 10%;
+  display: flex;
+  .energyGenerationSection_left {
+    .energyGenerationSection_title {
+      h4 {
+        margin-top: 3rem;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+      }
+    }
+    .energyGenerationSection_content {
+      margin-top: 2rem;
+      p {
+        line-height: 2;
+      }
+    }
+  }
+  .energyGenerationSection_right {
+    margin: 20px;
+    // height: 50vh;
+    background-image: url("/images/image2.jpg");
+    background-size: cover;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 0.75rem map-get($colors, darkgray));
+  }
+}
+
+.pollutionSection {
+  // margin-top: 10rem;
+  background-color: map-get($map: $colors, $key: light-green);
+  .pollutionContainer {
+    margin: 6rem 10%;
+    padding: 6rem 0;
+    .pollution {
+    }
+    .globalWarming {
+    }
+    .pollutionMore {
+      button {
+        padding: 0.7rem 1.5rem;
+        border: 2.5px solid map-get($map: $colors, $key: deep-green);
+        border-radius: 4px;
+        background-color: transparent;
+
+        a {
+          color: map-get($map: $colors, $key: deep-green);
+          text-decoration: none;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          &:hover {
+            color: map-get($map: $colors, $key: white);
+          }
+        }
+
+        &:hover {
+          background-color: map-get($map: $colors, $key: deep-green);
+
+          transition: all 0.3s ease;
+        }
+      }
+    }
   }
 }
