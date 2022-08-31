@@ -142,7 +142,7 @@ $navHeight: 80px;
   .part1_rightPart {
     .part1_rightPart_info {
       color: map-get($map: $colors, $key: dimgray);
-      span {
+      p {
         font-weight: 700;
       }
     }
@@ -198,7 +198,7 @@ $navHeight: 80px;
       width: 33.3vw;
       height: 40vh;
       z-index: 1;
-      //   transform: scale(1.5);
+      // transform: scale(1.5);
       position: relative;
       display: inline-block;
       filter: brightness(85%);
@@ -237,7 +237,7 @@ $navHeight: 80px;
 
 .part4Container {
   max-width: 100%;
-  height: 50rem;
+  height: 40rem;
   background-color: map-get($map: $colors, $key: green-background);
 
   .part4Left {
@@ -259,17 +259,15 @@ $navHeight: 80px;
     }
     .part4Left_button {
       margin-top: 2rem;
-      button {
+      a {
         padding: 0.7rem 1.5rem;
         border: 2.5px solid map-get($map: $colors, $key: deep-green);
         border-radius: 4px;
 
-        a {
-          color: map-get($map: $colors, $key: white);
-          text-decoration: none;
-          text-transform: uppercase;
-          font-weight: 500;
-        }
+        color: map-get($map: $colors, $key: white);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
 
         &:hover {
           background-color: map-get($map: $colors, $key: deep-green);
@@ -285,12 +283,7 @@ $navHeight: 80px;
     justify-content: center;
     align-items: center;
     background-image: url("/images/riccardo-annandale-7e2pe9wjL9M-unsplash.jpg");
-    object-fit: scale-down;
-
-    // img {
-    //   max-width: 100%;
-    //   max-height: 100%;
-    // }
+    background-size: cover;
   }
 }
 
@@ -396,34 +389,47 @@ $navHeight: 80px;
   .pollutionContainer {
     margin: 6rem 10%;
     padding: 6rem 0;
+
     .pollution {
     }
     .globalWarming {
     }
     .pollutionMore {
-      button {
-        padding: 0.7rem 1.5rem;
+      padding-top: 0.8rem;
+      a {
+        padding: 0.5rem 2rem;
         border: 2.5px solid map-get($map: $colors, $key: deep-green);
         border-radius: 4px;
         background-color: transparent;
-
-        a {
-          color: map-get($map: $colors, $key: deep-green);
-          text-decoration: none;
-          text-transform: uppercase;
-          font-weight: 500;
-
-          &:hover {
-            color: map-get($map: $colors, $key: white);
-          }
-        }
-
+        color: map-get($map: $colors, $key: deep-green);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
         &:hover {
+          color: map-get($map: $colors, $key: white);
           background-color: map-get($map: $colors, $key: deep-green);
-
           transition: all 0.3s ease;
         }
       }
+    }
+  }
+}
+
+// improve energy page
+.improveEnergyContainer {
+  margin: 8rem 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .energyBlock {
+    margin: 0 3rem 3rem 0;
+    width: 25rem;
+    height: 15rem;
+    border: 2px solid map-get($map: $colors, $key: deep-green);
+    border: {
+      radius: 6px;
+      top-right-radius: 40%;
     }
   }
 }

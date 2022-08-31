@@ -106,7 +106,7 @@
 .part1Container .part1_rightPart .part1_rightPart_info {
   color: #696969;
 }
-.part1Container .part1_rightPart .part1_rightPart_info span {
+.part1Container .part1_rightPart .part1_rightPart_info p {
   font-weight: 700;
 }
 .part1Container .part1_rightPart .part1_rightPart_images {
@@ -186,7 +186,7 @@
 
 .part4Container {
   max-width: 100%;
-  height: 50rem;
+  height: 40rem;
   background-color: #c2cbc2;
 }
 .part4Container .part4Left {
@@ -206,18 +206,16 @@
 .part4Container .part4Left .part4Left_button {
   margin-top: 2rem;
 }
-.part4Container .part4Left .part4Left_button button {
+.part4Container .part4Left .part4Left_button a {
   padding: 0.7rem 1.5rem;
   border: 2.5px solid #5f7161;
   border-radius: 4px;
-}
-.part4Container .part4Left .part4Left_button button a {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
 }
-.part4Container .part4Left .part4Left_button button:hover {
+.part4Container .part4Left .part4Left_button a:hover {
   background-color: #5f7161;
   transition: all 0.3s ease;
 }
@@ -226,7 +224,7 @@
   justify-content: center;
   align-items: center;
   background-image: url("/images/riccardo-annandale-7e2pe9wjL9M-unsplash.jpg");
-  object-fit: scale-down;
+  background-size: cover;
 }
 
 .footerContainer {
@@ -312,24 +310,39 @@
   margin: 6rem 10%;
   padding: 6rem 0;
 }
-.pollutionSection .pollutionContainer .pollutionMore button {
-  padding: 0.7rem 1.5rem;
+.pollutionSection .pollutionContainer .pollutionMore {
+  padding-top: 0.8rem;
+}
+.pollutionSection .pollutionContainer .pollutionMore a {
+  padding: 0.5rem 2rem;
   border: 2.5px solid #5f7161;
   border-radius: 4px;
   background-color: transparent;
-}
-.pollutionSection .pollutionContainer .pollutionMore button a {
   color: #5f7161;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
 }
-.pollutionSection .pollutionContainer .pollutionMore button a:hover {
+.pollutionSection .pollutionContainer .pollutionMore a:hover {
   color: #ffffff;
-}
-.pollutionSection .pollutionContainer .pollutionMore button:hover {
   background-color: #5f7161;
   transition: all 0.3s ease;
+}
+
+.improveEnergyContainer {
+  margin: 8rem 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.improveEnergyContainer .energyBlock {
+  margin: 0 3rem 3rem 0;
+  width: 25rem;
+  height: 15rem;
+  border: 2px solid #5f7161;
+  border-radius: 6px;
+  border-top-right-radius: 40%;
 }
 
 /*# sourceMappingURL=styles.css.map */
