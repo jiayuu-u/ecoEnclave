@@ -375,11 +375,14 @@ $navHeight: 80px;
   }
   .energyGenerationSection_right {
     margin: 20px;
-    // height: 50vh;
-    background-image: url("/images/image2.jpg");
-    background-size: cover;
-    border-radius: 4px;
+
     filter: drop-shadow(0 0 0.75rem map-get($colors, darkgray));
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
   }
 }
 
@@ -417,19 +420,59 @@ $navHeight: 80px;
 
 // improve energy page
 .improveEnergyContainer {
-  margin: 8rem 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  .energyBlock {
-    margin: 0 3rem 3rem 0;
-    width: 25rem;
-    height: 15rem;
-    border: 2px solid map-get($map: $colors, $key: deep-green);
-    border: {
-      radius: 6px;
-      top-right-radius: 40%;
+  .buildPart {
+    padding: 8rem 10%;
+    display: flex;
+
+    img {
+      max-width: 20rem;
+      height: min-content;
+    }
+
+    .buildPartText {
+      margin-left: 4rem;
+    }
+  }
+
+  .householdPart {
+    // margin: 8rem 10%;
+    padding: 4rem 10%;
+    display: flex;
+    background-color: map-get($map: $colors, $key: light-green);
+    .householdPartText {
+      margin-right: 4rem;
+    }
+    img {
+      max-width: 20rem;
+      height: min-content;
+    }
+  }
+
+  .appliancesPart {
+    padding: 8rem 10%;
+    display: flex;
+
+    img {
+      max-width: 20rem;
+      height: min-content;
+    }
+
+    .appliancesPartText {
+      margin-left: 4rem;
+    }
+  }
+
+  .lightingPart {
+    // margin: 8rem 10%;
+    padding: 4rem 10%;
+    display: flex;
+    background-color: map-get($map: $colors, $key: light-green);
+    .lightingPartText {
+      margin-right: 4rem;
+    }
+    img {
+      max-width: 20rem;
+      height: min-content;
     }
   }
 }

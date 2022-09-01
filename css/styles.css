@@ -297,10 +297,12 @@
 }
 .energyGenerationSection .energyGenerationSection_right {
   margin: 20px;
-  background-image: url("/images/image2.jpg");
-  background-size: cover;
-  border-radius: 4px;
   filter: drop-shadow(0 0 0.75rem #a9a9a9);
+}
+.energyGenerationSection .energyGenerationSection_right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 .pollutionSection {
@@ -329,20 +331,51 @@
   transition: all 0.3s ease;
 }
 
-.improveEnergyContainer {
-  margin: 8rem 10%;
+.improveEnergyContainer .buildPart {
+  padding: 8rem 10%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
-.improveEnergyContainer .energyBlock {
-  margin: 0 3rem 3rem 0;
-  width: 25rem;
-  height: 15rem;
-  border: 2px solid #5f7161;
-  border-radius: 6px;
-  border-top-right-radius: 40%;
+.improveEnergyContainer .buildPart img {
+  max-width: 20rem;
+  height: min-content;
+}
+.improveEnergyContainer .buildPart .buildPartText {
+  margin-left: 4rem;
+}
+.improveEnergyContainer .householdPart {
+  padding: 4rem 10%;
+  display: flex;
+  background-color: #ccd6a6;
+}
+.improveEnergyContainer .householdPart .householdPartText {
+  margin-right: 4rem;
+}
+.improveEnergyContainer .householdPart img {
+  max-width: 20rem;
+  height: min-content;
+}
+.improveEnergyContainer .appliancesPart {
+  padding: 8rem 10%;
+  display: flex;
+}
+.improveEnergyContainer .appliancesPart img {
+  max-width: 20rem;
+  height: min-content;
+}
+.improveEnergyContainer .appliancesPart .appliancesPartText {
+  margin-left: 4rem;
+}
+.improveEnergyContainer .lightingPart {
+  padding: 4rem 10%;
+  display: flex;
+  background-color: #ccd6a6;
+}
+.improveEnergyContainer .lightingPart .lightingPartText {
+  margin-right: 4rem;
+}
+.improveEnergyContainer .lightingPart img {
+  max-width: 20rem;
+  height: min-content;
 }
 
 /*# sourceMappingURL=styles.css.map */
