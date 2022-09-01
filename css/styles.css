@@ -95,48 +95,48 @@
   transform: rotate(90deg);
 }
 
-.part1Container {
+.saveEnergyHome {
   padding: 5rem 15% 0 15%;
 }
-.part1Container .part1_leftPart {
+.saveEnergyHome .saveEnergyHome_leftPart {
   font-size: 1.2rem;
   padding: 0 100px 0 0;
   color: #2b2b2b;
 }
-.part1Container .part1_rightPart .part1_rightPart_info {
+.saveEnergyHome .saveEnergyHome_rightPart .saveEnergyHome_rightPart_info {
   color: #696969;
 }
-.part1Container .part1_rightPart .part1_rightPart_info p {
+.saveEnergyHome .saveEnergyHome_rightPart .saveEnergyHome_rightPart_info p {
   font-weight: 700;
 }
-.part1Container .part1_rightPart .part1_rightPart_images {
+.saveEnergyHome .saveEnergyHome_rightPart .saveEnergyHome_rightPart_images {
   margin-top: 40px;
 }
-.part1Container .part1_rightPart .part1_rightPart_images img {
+.saveEnergyHome .saveEnergyHome_rightPart .saveEnergyHome_rightPart_images img {
   width: 6rem;
   height: auto;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.part2Container {
+.bigWordContainer {
   padding: 0 15% 0 15%;
   margin-top: 6rem;
 }
-.part2Container h1 {
+.bigWordContainer h1 {
   color: #696969;
   font-size: 4.5rem;
   line-height: 1;
   z-index: 99;
   font-weight: 600;
 }
-.part2Container h1 .green {
+.bigWordContainer h1 .green {
   color: #688f4e;
 }
-.part2Container h1 .yellow {
+.bigWordContainer h1 .yellow {
   color: #ecda65;
 }
-.part2Container .part2-under {
+.bigWordContainer .bigWord-under {
   top: -6rem;
   display: flex;
   justify-content: flex-end;
@@ -148,10 +148,10 @@
   z-index: -1;
 }
 
-.part3Container .part3_image {
+.imageGalleryContainer .imageGallery_image {
   padding: 0;
 }
-.part3Container .part3_image img {
+.imageGalleryContainer .imageGallery_image img {
   width: 33.3vw;
   height: 40vh;
   z-index: 1;
@@ -159,7 +159,7 @@
   display: inline-block;
   filter: brightness(85%);
 }
-.part3Container .part3_image .part3_overlay {
+.imageGalleryContainer .imageGallery_image .imageGallery_overlay {
   background-color: #6d8b74;
   opacity: 20%;
   width: 100%;
@@ -172,41 +172,41 @@
   align-items: center;
   justify-content: center;
 }
-.part3Container .part3_image .part3_overlay:hover {
+.imageGalleryContainer .imageGallery_image .imageGallery_overlay:hover {
   transition: 0.5s ease;
   background-color: #000000;
   overflow: hidden;
 }
-.part3Container .part3_image .part3_overlayText p {
+.imageGalleryContainer .imageGallery_image .imageGallery_overlayText p {
   z-index: 3;
   font-size: 5rem;
   text-align: center;
   color: #ffffff;
 }
 
-.part4Container {
+.whySaveEnergyContainer {
   max-width: 100%;
   height: 40rem;
   background-color: #c2cbc2;
 }
-.part4Container .part4Left {
+.whySaveEnergyContainer .whySaveEnergy_Left {
   color: #2b2b2b;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 4rem;
 }
-.part4Container .part4Left .part4Left_title h2 {
+.whySaveEnergyContainer .whySaveEnergy_Left .whySaveEnergy_Left_title h2 {
   font-size: 4rem;
   font-weight: 600;
 }
-.part4Container .part4Left .part4Left_content {
+.whySaveEnergyContainer .whySaveEnergy_Left .whySaveEnergy_Left_content {
   padding-top: 2rem;
 }
-.part4Container .part4Left .part4Left_button {
+.whySaveEnergyContainer .whySaveEnergy_Left .whySaveEnergy_Left_button {
   margin-top: 2rem;
 }
-.part4Container .part4Left .part4Left_button a {
+.whySaveEnergyContainer .whySaveEnergy_Left .whySaveEnergy_Left_button a {
   padding: 0.7rem 1.5rem;
   border: 2.5px solid #5f7161;
   border-radius: 4px;
@@ -215,11 +215,11 @@
   text-transform: uppercase;
   font-weight: 500;
 }
-.part4Container .part4Left .part4Left_button a:hover {
+.whySaveEnergyContainer .whySaveEnergy_Left .whySaveEnergy_Left_button a:hover {
   background-color: #5f7161;
   transition: all 0.3s ease;
 }
-.part4Container .part4Right {
+.whySaveEnergyContainer .whySaveEnergy_Right {
   display: flex;
   justify-content: center;
   align-items: center;

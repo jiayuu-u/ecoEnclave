@@ -131,22 +131,22 @@ $navHeight: 80px;
   }
 }
 
-.part1Container {
+.saveEnergyHome {
   padding: 5rem 15% 0 15%;
 
-  .part1_leftPart {
+  .saveEnergyHome_leftPart {
     font-size: 1.2rem;
     padding: 0 100px 0 0;
     color: map-get($map: $colors, $key: deepgray);
   }
-  .part1_rightPart {
-    .part1_rightPart_info {
+  .saveEnergyHome_rightPart {
+    .saveEnergyHome_rightPart_info {
       color: map-get($map: $colors, $key: dimgray);
       p {
         font-weight: 700;
       }
     }
-    .part1_rightPart_images {
+    .saveEnergyHome_rightPart_images {
       margin-top: 40px;
       img {
         width: 6rem;
@@ -158,7 +158,7 @@ $navHeight: 80px;
   }
 }
 
-.part2Container {
+.bigWordContainer {
   padding: 0 15% 0 15%;
   margin-top: 6rem;
   //   z-index: -1;
@@ -177,7 +177,7 @@ $navHeight: 80px;
     }
   }
 
-  .part2-under {
+  .bigWord-under {
     top: -6rem;
     // right: 0;
     display: flex;
@@ -191,8 +191,8 @@ $navHeight: 80px;
   }
 }
 
-.part3Container {
-  .part3_image {
+.imageGalleryContainer {
+  .imageGallery_image {
     padding: 0;
     img {
       width: 33.3vw;
@@ -204,7 +204,7 @@ $navHeight: 80px;
       filter: brightness(85%);
     }
 
-    .part3_overlay {
+    .imageGallery_overlay {
       background-color: map-get($map: $colors, $key: light-green2);
       opacity: 20%;
       width: 100%;
@@ -224,7 +224,7 @@ $navHeight: 80px;
       }
     }
 
-    .part3_overlayText {
+    .imageGallery_overlayText {
       p {
         z-index: 3;
         font-size: 5rem;
@@ -235,29 +235,29 @@ $navHeight: 80px;
   }
 }
 
-.part4Container {
+.whySaveEnergyContainer {
   max-width: 100%;
   height: 40rem;
   background-color: map-get($map: $colors, $key: green-background);
 
-  .part4Left {
+  .whySaveEnergy_Left {
     color: map-get($map: $colors, $key: deepgray);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 4rem;
-    .part4Left_title {
+    .whySaveEnergy_Left_title {
       h2 {
         font-size: 4rem;
         font-weight: 600;
       }
     }
-    .part4Left_content {
+    .whySaveEnergy_Left_content {
       padding-top: 2rem;
       p {
       }
     }
-    .part4Left_button {
+    .whySaveEnergy_Left_button {
       margin-top: 2rem;
       a {
         padding: 0.7rem 1.5rem;
@@ -277,7 +277,7 @@ $navHeight: 80px;
     }
   }
 
-  .part4Right {
+  .whySaveEnergy_Right {
     // padding: 5rem;
     display: flex;
     justify-content: center;
